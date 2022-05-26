@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+}
+
+.list {
+  width: 200px;
+}
+
+.list-name {
+height: 30px;
+list-style-type: none;
+cursor: pointer;
+border: solid 1px black;
+}
+
+.details {
+  margin-left: 50px;
+  width: 350px;
+}
+
+.name, .city, .company, .position {
+  border: solid 1px black;
+  height: 32px;
+}
