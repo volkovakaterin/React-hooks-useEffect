@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { nanoid } from 'nanoid'
 
 function List(props) {
     const[list, setList] = useState();
@@ -14,13 +13,11 @@ function List(props) {
               setList(result);
             },
             (error) => {
-              setList(error);
+              console.log(error);;
             }
           )
       }
-        return function cleanup() {
-          loadingList()
-        };
+        return loadingList();
       }, []);
 
     function openDetails(id, name, e){

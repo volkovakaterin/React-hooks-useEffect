@@ -19,13 +19,11 @@ function Details(props) {
               setInfo(result);
             },
             (error) => {
-              setInfo(error);
+              console.log(error);
             }
           )
       }
-        return function cleanup() {
-          loading()
-        };
+        return loading()
       }, [user.id]);
 
     if(typeof info === 'object') {
